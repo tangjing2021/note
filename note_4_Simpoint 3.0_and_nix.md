@@ -60,7 +60,7 @@ SimPoint 3.0从0开始计数区间，而不是1，这可能导致理解上的错
 
 
 
-#[https://github.com/tangjing2021/note/blob/main/Simpoint%E5%9F%BA%E7%A1%80.pptx](Simpoint基础ppt)
+#[Simpoint基础ppt](https://github.com/tangjing2021/note/blob/main/Simpoint%E5%9F%BA%E7%A1%80.pptx)
 
 ---
 
