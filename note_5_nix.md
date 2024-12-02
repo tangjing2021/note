@@ -109,21 +109,21 @@ fi
 
 # 关于nix-shell
 ```bash
-//短暂设置环境变量 NIX_PATH，并将其中的 nixpkgs 绑定到指定的本地路径，通过这种方式，Nix 会在指定的路径中查找 nixpkgs，而不是默认的在线源或其他路径
+#短暂设置环境变量 NIX_PATH，并将其中的 nixpkgs 绑定到指定的本地路径，通过这种方式，Nix 会在指定的路径中查找 nixpkgs，而不是默认的在线源或其他路径
 export NIX_PATH=nixpkgs=/home/.../nixpkgs   
 
-//查看nix环境变量
+#查看nix环境变量
 echo $NIX_PATH
 
-//在指定的路径中查找 nixpkgs
+#在指定的路径中查找 nixpkgs
 nix-shell -I nixpkgs=/home/tj/mygit/nixpkgs ... .nix
 
-//命令用于将一个新的 Nix 渠道添加到你的系统配置中。渠道是一个指定的源，Nix 会从该源下载包和更新。如果源发生变化，Nix 会重新从新的源下载并计算依赖
+#命令用于将一个新的 Nix 渠道添加到你的系统配置中。渠道是一个指定的源，Nix 会从该源下载包和更新。如果源发生变化，Nix 会重新从新的源下载并计算依赖
 nix-channel --add https://nixos.org/channels/nixos-23.05 nixpkgs
 
-//更新频道，以便同步
+#更新频道，以便同步
 nix-channel --update
 
-//查看
+#查看
 nix-channel --list
 ```
