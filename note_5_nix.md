@@ -58,6 +58,7 @@ nixpkgs.stdenv.mkDerivation rec {
     nixpkgs.coreutils  # 提供常用工具
     nixpkgs.bash  # 提供 bash 支持
   ];
+  #builder = /home/tj/build.sh;  # 使用自定义构建脚本
   meta = with nixpkgs; {
     description = "A simple Hello World program written in C";
     license = licenses.gpl3;
