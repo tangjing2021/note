@@ -76,6 +76,34 @@ nixpkgs.stdenv.mkDerivation rec {
 }
 ```
 
+```bush
+#build.sh
+#!/bin/bash
+
+# 进入 Nix 构建环境
+source $stdenv/setup
+
+echo "Starting build process in Nix environment..."
+
+# 进入源代码目录
+echo "Current working directory: $(pwd)"
+echo "Source directory: $src"
+cd $src
+echo "Current working directory: $(pwd)"
+
+mkdir -p $out
+
+# 使用 gcc 编译程序
+g++ -o $out/hello main.cpp
+if [ $? -eq 0 ]; then
+  echo "Compilation successful."
+else
+  echo "Compilation failed."
+  exit 1
+fi
+
+```
+
 
 
 # 关于nix-shell
