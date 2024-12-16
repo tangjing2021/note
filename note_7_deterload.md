@@ -1,5 +1,6 @@
 # Deterload框架流程
 ![整体框架](https://github.com/tangjing2021/note/blob/main/img/deterload/deterload_%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.png)
+
 ## nix的确定性
 ### 沙箱构建
 Nix 构建过程在沙箱中进行，屏蔽了原环境的影响，例如配置、环境变量、依赖等。
@@ -29,6 +30,7 @@ Nix 存储（Nix store，通常位于 /nix/store）中的每个文件和目录�
 ## imgBuilder
 负责生成benchmark负载所需的镜像。
 ![imgBuilder](https://github.com/tangjing2021/note/blob/main/img/deterload/imgBuilder.png)
+
 ### opensbi
 OpenSBI（Open Supervisor Binary Interface）是用于 RISC-V 架构的固件，负责在系统启动时初始化硬件并提供基本服务。
 **功能：**
@@ -59,6 +61,7 @@ Initramfs（Initial RAM Filesystem）是启动时加载的内存根文件系统�
 ## cptBuilder
 对benchmark进行切片操作。
 ![cptBuilder](https://github.com/tangjing2021/note/blob/main/img/deterload/cptBuilder.png)
+
 ### QEMU、NEMU 
 用于模拟和仿真的工具。
 ### stage1-profiling
