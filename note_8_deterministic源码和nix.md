@@ -45,7 +45,7 @@ Nix 遵循 XDG Base Directory Specification 来管理配置：
  命令用于将指定的路径添加到 Nix store，与 --add 命令不同，路径将使用指定的哈希算法进行注册。
 - nix-store --gc 
 命令用于运行 Nix store 的垃圾回收，删除那些在文件系统中无法通过“根”路径访问的 Nix store 路径。通过清理不再需要的路径，这个命令帮助保持 Nix store 的干净和节省空间。
-## uitile
+
 # deterministic_checkpoints代码
 
 ## shell.nix文件
