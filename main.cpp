@@ -54,12 +54,8 @@ void solve() {
 
 int main()
 {
-    // FILE *f1=fopen("ks.txt","w");
-    // fclose(f1);
     for (int i=0;i<time_int;i++) {
         solve();
     }
-    FILE *f2=fopen("js.txt","w");
-    fclose(f2);
     return 0;
 }
