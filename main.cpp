@@ -39,8 +39,8 @@ void test4() {
     }
 }
 void test5() {
-    for (ll x : sum) {
-        printf("%lld\n",x);
+    for (ll x=0;x<mx_int;x++) {
+        printf("%lld\n",sum[x]);
     }
 }
 
@@ -49,7 +49,7 @@ void solve() {
     test2();
     test3();
     test4();
-    // test5();
+    test5();
 }
 
 int main()
