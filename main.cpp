@@ -33,11 +33,11 @@ void test3() {
         sum[x]=sum[x-1]*sum[x-2];
     }
 }
-// void test4() {
-//     for (ll x=0;x<mx_int;x++) {
-//         sum[x]=fun_pow(x,x,1e9+7);
-//     }
-// }
+void test4() {
+    for (ll x=0;x<mx_int;x++) {
+        sum[x]=fun_pow(x,x,1e9+7);
+    }
+}
 void test5() {
     for (ll x : sum) {
         printf("%lld\n",x);
@@ -47,19 +47,19 @@ void test5() {
 void solve() {
     test1();
     test2();
-    test3();
+    // test3();
     // test4();
-    test5();
+    // test5();
 }
 
 int main()
 {
-    FILE *f1=fopen("ks.txt","w");
-    fclose(f1);
+    // FILE *f1=fopen("ks.txt","w");
+    // fclose(f1);
     for (int i=0;i<time_int;i++) {
         solve();
     }
-    FILE *f2=fopen("js.txt","w");
-    fclose(f2);
+    // FILE *f2=fopen("js.txt","w");
+    // fclose(f2);
     return 0;
 }
