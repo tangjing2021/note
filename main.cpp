@@ -40,7 +40,7 @@ void test4() {
 }
 void test5() {
     for (ll x=0;x<mx_int;x++) {
-        printf("%lld\n",sum[x]);
+        sum[x]=(sum[x]^sum[x]);
     }
 }
 
@@ -59,7 +59,7 @@ int main()
     for (int i=0;i<time_int;i++) {
         solve();
     }
-    // FILE *f2=fopen("js.txt","w");
-    // fclose(f2);
+    FILE *f2=fopen("js.txt","w");
+    fclose(f2);
     return 0;
 }
