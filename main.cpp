@@ -33,11 +33,11 @@ void test3() {
         sum[x]=sum[x-1]*sum[x-2];
     }
 }
-void test4() {
-    for (ll x=0;x<mx_int;x++) {
-        sum[x]=fun_pow(x,x,1e9+7);
-    }
-}
+// void test4() {
+//     for (ll x=0;x<mx_int;x++) {
+//         sum[x]=fun_pow(x,x,1e9+7);
+//     }
+// }
 void test5() {
     for (ll x : sum) {
         printf("%lld\n",x);
