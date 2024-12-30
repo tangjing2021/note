@@ -42,7 +42,7 @@ makeFlags 主要的作用是确保在 make 命令执行时，传递给 make 的�
   };
 ```
 从github上下载对应的压缩包，并且进行解压。其中的main.cpp就是需要处理的代码。
-### 2.2.2 编译工具
+### 2.1.2 编译工具
 ```nix
   riscv64-cc = pkgs.pkgsCross.riscv64.stdenv.cc;
   riscv64-libc-static = pkgs.pkgsCross.riscv64.stdenv.cc.libc.static;
@@ -70,7 +70,7 @@ customJemalloc = riscv64-jemalloc.overrideAttrs (oldAttrs: {
 - --enable-static: 启用静态库的构建。
 - --disable-shared: 禁用共享库的构建。
 -  postInstall: 将库保存到对应位置。 
-### 2.3.3 编译
+### 2.1.3 编译
 ```nix
   crossConfig = {
     host = "x86_64-linux";  # 宿主机架构
